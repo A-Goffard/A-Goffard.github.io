@@ -1,21 +1,25 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
     var formulariosCompletos = 0;
 
-    $('form').submit(function (event) {
-        event.preventDefault();
-        var formId = $(this).attr('id');
-        verificarString(getCadenaEsperada(formId), getResultId(formId), formId);
+    var forms = document.querySelectorAll('form');
+
+    forms.forEach(function (formulario) {
+        formulario.addEventListener('submit', function (event) {
+            event.preventDefault();
+            var formId = formulario.id;
+            verificarString(getCadenaEsperada(formId), getResultId(formId), formId);
+        });
     });
 
     function verificarString(cadenaEsperada, resultadoId, formId) {
-        var inputString = $('#' + formId + ' input[type="text"]').val();
+        var inputString = document.querySelector('#' + formId + ' input[type="text"]').value;
 
         if (inputString === cadenaEsperada) {
             mostrarResultado(obtenerMensajeCorrecto(formId), resultadoId, '#ABDB2A');
             formulariosCompletos++;
 
-            if (formulariosCompletos === $('form').length) {
-                $('#btnIrAOtraPagina').show();
+            if (formulariosCompletos === forms.length) {
+                document.getElementById('btnIrAOtraPagina').style.display = 'block';
             }
         } else {
             mostrarResultado('Sigue intentándolo. La respuesta no es la que queremos. ', resultadoId, 'red');
@@ -23,7 +27,8 @@ $(document).ready(function () {
     }
 
     function mostrarResultado(mensaje, resultadoId, color) {
-        $('#' + resultadoId).text(mensaje).css('color', color);
+        document.getElementById(resultadoId).textContent = mensaje;
+        document.getElementById(resultadoId).style.color = color;
     }
 
     function obtenerMensajeCorrecto(formId) {
@@ -88,6 +93,24 @@ $(document).ready(function () {
                 return '';
         }
     }
+
+    // Añade un evento de clic al botón btnIrAOtraPagina
+    document.getElementById('btnIrAOtraPagina').addEventListener('click', function () {
+        // Redirige a otraPagina.html
+        window.location.href = '/otraPagina.html';
+    });
+
+
+
+
+
+
+
+
+
+
+    //ESTA PARTE HAY QUE MODIFICAR JUNTO CON LA OTRAPAGINA
+
 
     // Animación Typed.js para el primer mensaje
     var options1 = {
