@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+    color: #ABDB2A;
+}
+
+.bienvenida {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.textoinicial {
+    margin: 1.5rem;
+}
+
+p {
+    font-size: larger;
+}
+
+ul li {
+    list-style: circle;
+}
+
+.container {
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+input {
+    height: 2rem;
+    border-radius: 0.5rem;
+    width: 15rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 0.3rem;
+}
+
+button {
+    color: #000000;
+    background-color: #ABDB2A;
+    border-color: #f4ffd7;
+    border-radius: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+#resultado {
+    margin-top: 2rem;
+}
+
+.textoFinal {
+    width: 97%;
+    font-size: larger;
+    height: auto;
+}
+
+.tf {
+    margin: 1rem;
+}
+
+.animacion-typed {
+    display: inline-block; /* Para que el texto Typed aparezca en línea */
+    margin-bottom: 1rem; /* Ajusta el margen según sea necesario */
+}
