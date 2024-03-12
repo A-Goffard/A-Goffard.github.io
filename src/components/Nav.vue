@@ -33,5 +33,10 @@
     background-color: rgb(184, 53, 184);
     color: white;
     font-size: large;
+    transition: 250ms ease;
+}
+.boton:hover {
+    background-color: rgb(207, 59, 207);
+    color: rgb(255, 227, 255);
 }
 </style>
