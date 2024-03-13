@@ -8,7 +8,7 @@ import Contacto from '../views/Contacto.vue';
 
 const routes = [
   {
-    path: '/inicio',
+    path: '/',
     name: 'Inicio',
     component: Inicio,
   },

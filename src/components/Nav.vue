@@ -1,6 +1,6 @@
 <template>
     <div class="banner" id="banner">
-        <button @click="goTo('/inicio')" class="boton">Inicio</button>
+        <button @click="goTo('/')" class="boton">Inicio</button>
         <button @click="goTo('/sobremi')" class="boton">Sobre mí</button>
         <button @click="goTo('/curriculum')" class="boton">Currículum</button>
         <button @click="goTo('/skills')" class="boton">Skills</button>
