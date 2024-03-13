@@ -33,6 +33,7 @@ export default {
   padding: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
+  background-color: var(--rosahipermegaclarito);
 }
 
 :root {
@@ -40,7 +41,15 @@ export default {
   --lilaboton:  #b835b8;
   --lilabotonhover: #cf3bcf;
   --rosasuperclarito: #ffe3ff;
+  --rosahipermegaclarito: #ffeeff;
   --blanco: #ffffff;
 }
+
+h1 {
+  color: var(--moradomuyoscuro);
+  margin: 1rem;
+  font-size: xx-large;
+}
+
 </style>
 

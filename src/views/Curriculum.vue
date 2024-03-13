@@ -9,9 +9,5 @@
 </script>
 
 <style scoped>
-.titulo{
-    margin: 1rem;
-    color: var(--moradomuyoscuro);
-    font-size: xx-large;
-}
+
 </style>
