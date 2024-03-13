@@ -1,17 +1,29 @@
 <template>
-  <Nav />
-  <HelloWorld />
+  <div>
+    <Nav />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Nav from "./components/Nav.vue";
+import Inicio from "./views/Inicio.vue";
+import Contacto from "./views/Contacto.vue";
+import Curriculum from "./views/Curriculum.vue";
+import Proyectos from "./views/Proyectos.vue";
+import Skills from "./views/Skills.vue";
+import SobreMi from "./views/SobreMi.vue";
 
 export default {
   components: {
     Nav,
-    HelloWorld
-  }
+    Inicio,
+    Contacto,
+    Curriculum,
+    Proyectos,
+    Skills,
+    SobreMi,
+  },
 }
 </script>
 
@@ -21,8 +33,14 @@ export default {
   padding: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #581446;
 }
 
-
+:root {
+  --moradomuyoscuro: #581446;
+  --lilaboton:  #b835b8;
+  --lilabotonhover: #cf3bcf;
+  --rosasuperclarito: #ffe3ff;
+  --blanco: #ffffff;
+}
 </style>
+
