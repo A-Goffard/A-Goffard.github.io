@@ -37,7 +37,8 @@ export default {
 }
 
 :root {
-  --moradomuyoscuro: #581446;
+  --moradomuyoscuro: #490946;
+  --moradooscuro: #5e0f5a;
   --lilaboton:  #b835b8;
   --lilabotonhover: #cf3bcf;
   --rosasuperclarito: #ffe3ff;
