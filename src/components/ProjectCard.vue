@@ -4,6 +4,8 @@
       <h2>{{ project.title }}</h2>
       <p>{{ project.description }}</p>
       <img :src="project.image" alt="Project Image">
+      <img :src="project.image2" alt="Project Image">
+ 
       <!-- Otros detalles del proyecto -->
     </div>
   </template>
@@ -46,7 +48,8 @@
 
   img {
     background-color: var(--blanco);
-    width: auto;
+    max-width: 100%;
+    max-height: 100%;
     margin: 0.5rem;
     border-radius: 0.5rem;
   }
