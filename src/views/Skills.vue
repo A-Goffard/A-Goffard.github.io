@@ -1,20 +1,24 @@
 <template>
     <div>
         <h1 class="titulo">Skills y Stack</h1>
-        <div class="contenedor-iconos">
-            <button class="btn-html"><img class="iconos btn-html" src="/skills/html.png" alt="">HTML</button>
-            <button class="btn-css"><img class="iconos btn-css" src="/skills/css.png" alt="">CSS</button>
-            <button class="btn-canva"><img class="iconos btn-canva" src="/skills/canva.png" alt="">Canva</button>
-            <button class="btn-figma"><img class="iconos btn-figma" src="/skills/figma.png" alt="">Figma</button>
-            <button class="btn-js"><img class="iconos btn-js" src="/skills/js.png" alt="">JavaScript</button>
-            <button class="btn-trello"><img class="iconos btn-trello" src="/skills/trello.png" alt="">Trello</button>
-            <button class="btn-vue"><img class="iconos btn-vue" src="/skills/vue.png" alt="">Vue</button>
-            <button class="btn-scrum">Scrum</button>
-            <button class="btn-agile">Agile</button>
-            <button class="btn-coordinacion">Coordinación de equipos</button>
-            <button class="btn-comunicacion"><img class="iconos btn-comunicacion" src="/skills/comunicacion.png" alt="">Comunicación</button>
-
+        <div class="contenedor">
+            <div class="contenedor-iconos">
+                <button class="btn-html"><img class="iconos btn-html" src="/skills/html.png" alt="">HTML</button>
+                <button class="btn-css"><img class="iconos btn-css" src="/skills/css.png" alt="">CSS</button>
+                <button class="btn-canva"><img class="iconos btn-canva" src="/skills/canva.png" alt="">Canva</button>
+                <button class="btn-figma"><img class="iconos btn-figma" src="/skills/figma.png" alt="">Figma</button>
+                <button class="btn-js"><img class="iconos btn-js" src="/skills/js.png" alt="">JavaScript</button>
+                <button class="btn-trello"><img class="iconos btn-trello" src="/skills/trello.png" alt="">Trello</button>
+                <button class="btn-vue"><img class="iconos btn-vue" src="/skills/vue.png" alt="">Vue</button>
+            </div>
+            <div class="contenedor-iconos">
+                <button class="btn-scrum">Scrum</button>
+                <button class="btn-agile">Agile</button>
+                <button class="btn-coordinacion">Coordinación de equipos</button>
+                <button class="btn-comunicacion"><img class="iconos btn-comunicacion" src="/skills/comunicacion.png" alt="">Comunicación</button>
+            </div>
         </div>
+        
     </div>
 </template>
 
@@ -23,19 +27,17 @@
 </script>
 
 <style scoped>
-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-contenedor-iconos {
+.contenedor-iconos {
+    max-width: 50rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 button {
     padding: 0.3rem 1rem;
     border-radius: 0.5rem;
