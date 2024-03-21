@@ -3,19 +3,9 @@
         <button @click="goTo('/')" class="boton">Inicio</button>
         <button @click="goTo('/sobremi')" class="boton">Sobre mí</button>
         <button @click="goTo('/curriculum')" class="boton">Currículum</button>
-        <button @click="goTo('/skills')" class="boton">Skills</button>
+        <button @click="goTo('/skills')" class="boton">Skills/Stack</button>
         <button @click="goTo('/proyectos')" class="boton">Proyectos</button>
         <button @click="goTo('/contacto')" class="boton">Contacto</button>
-    <!-- <div class="banner" id="banner">
-        <router-link to="/inicio" class="boton">Inicio</router-link>
-        <router-link to="/sobremi" class="boton">Sobre mí</router-link>
-        <router-link to="/curriculum" class="boton">Currículum</router-link>
-        <router-link to="/skills" class="boton">Skills</router-link>
-        <router-link to="/proyectos" class="boton">Proyectos</router-link>
-        <router-link to="/contacto" class="boton">Contacto</router-link>
-    </div>-->
-    
-    
     </div>
 </template>
 

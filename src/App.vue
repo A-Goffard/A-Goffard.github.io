@@ -49,7 +49,7 @@ export default {
 h1 {
   color: var(--moradomuyoscuro);
   margin: 1rem;
-  font-size: xx-large;
+  font-size: 3rem;
 }
 
 </style>
