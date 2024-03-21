@@ -13,6 +13,8 @@
             </div>
             <div class="contenedor-iconos">
                 <button class="btn-scrum">Scrum</button>
+                <button class="btn-creativa">Creativa</button>
+                <button class="btn-adaptable">Adaptable</button>
                 <button class="btn-agile">Agile</button>
                 <button class="btn-coordinacion">Coordinación de equipos</button>
                 <button class="btn-comunicacion"><img class="iconos img-comunicacion" src="/skills/comunicacion.png" alt="">Comunicación</button>
@@ -154,6 +156,20 @@ button {
 }
 .btn-comunicacion:hover {
     box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(128, 10, 114);
+}
+.btn-creativa {
+    background-color: rgb(236, 34, 50);
+    color: rgb(77, 18, 14);
+}
+.btn-creativa:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(236, 34, 50);
+}
+.btn-adaptable {
+    background-color: rgb(12, 54, 133);
+    color: rgb(195, 211, 255);
+}
+.btn-adaptable:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(12, 54, 133);
 }
 
 </style>

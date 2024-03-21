@@ -36,6 +36,7 @@ const sendEmail = () => {
 <style scoped>
 p {
     font-size: x-large;
+    margin: 1rem;
 }
 img {
     margin: 2rem;

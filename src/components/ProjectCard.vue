@@ -3,10 +3,7 @@
     <div class="project-card">
       <h2>{{ project.title }}</h2>
       <p>{{ project.description }}</p>
-      <img :src="project.image" alt="Project Image">
-      <img :src="project.image2" alt="Project Image">
- 
-      <!-- Otros detalles del proyecto -->
+      <img :src="project.imagecuadrada" alt="Project Image">
     </div>
   </template>
   
@@ -48,10 +45,11 @@
 
   img {
     background-color: var(--blanco);
-    max-width: 100%;
+    max-width: 95%;
     max-height: 100%;
     margin: 0.5rem;
     border-radius: 0.5rem;
+    border: solid 1px var(--rosaclaro);
   }
   </style>
   

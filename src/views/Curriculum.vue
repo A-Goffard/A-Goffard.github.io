@@ -2,10 +2,14 @@
     <div>
         <h1 class="titulo">Currículum</h1>
         <div class="contenedor-curriculum">
-            <div>
+            <div class="datos-presentacion">
                 <img src="" alt="">
+                <h2>Aintzane Goffard</h2>
+                <p>Desarrolladora web</p>
             </div>
-            <div></div>
+            <div class="">
+
+            </div>
             <div></div>
             <div></div>
             <div></div>

@@ -41,6 +41,8 @@ export default {
   --moradooscuro: #5e0f5a;
   --lilaboton:  #b835b8;
   --lilabotonhover: #cf3bcf;
+  --rosa: #fc4afc;
+  --rosaclaro: #ffb0ff;
   --rosasuperclarito: #ffe3ff;
   --rosahipermegaclarito: #ffeeff;
   --blanco: #ffffff;

@@ -18,10 +18,11 @@ import { ref } from 'vue';
   const projects= ref([
     {
         id: 1,
-        title: 'Empezando con Vue 3 composition API',
-        description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Se trataba de montar un proyecto simple con Vue 3 Composition API para mostrar su funcionamiento y utilidad y explicar diferentes tipos de elementos que se usan en él.',
-        image: 'memory.png',
-        image2: 'contacto.png',
+        title: 'Empezando con Vue 3',
+        description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Se trataba de montar un proyecto simple con Vue 3 Composition API.',
+        image: '/proyectos/memory.png',
+        image2: '/proyectos/contacto.png',
+        imagecuadrada: '/proyectos/cuadradas/6.png',
         GitHub: 'https://github.com/A-Goffard/memory',
         // Otros detalles del proyecto
     },
@@ -29,8 +30,9 @@ import { ref } from 'vue';
         id: 2,
         title: 'HackathonF5 2024',
         description: 'Este es el proyecto de EcoPop que desarrollamos para el Hackathon de F5 en 2024 enfocado a estudiantes. Un marcketplace en 48 horas.',
-        image: 'conclusiones.jpeg',
-        image2: 'Diploma.png',
+        image: '/proyectos/conclusiones.jpeg',
+        image2: '/proyectos/Diploma.png',
+        imagecuadrada: '/proyectos/cuadradas/3.png',
         GitHub: 'https://github.com/A-Goffard/ecoPop',
         // Otros detalles del proyecto
     },
@@ -38,8 +40,9 @@ import { ref } from 'vue';
         id: 3,
         title: 'Marifarma tienda online',
         description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Una tienda online para desarroyar los conocimientos en JavaScript.',
-        image: 'marifarma.png',
-        image2: 'carrito-marifarma.png',
+        image: '/proyectos/marifarma.png',
+        image2: '/proyectos/carrito-marifarma.png',
+        imagecuadrada: '/proyectos/cuadradas/1.png',
         GitHub: 'https://github.com/A-Goffard/memory',
         // Otros detalles del proyecto
     },
@@ -47,8 +50,9 @@ import { ref } from 'vue';
         id: 4,
         title: 'Proyecto BilboStack',
         description: 'Es un proyecto desarrollado para presentar una actividad desde el contexto del Bootcamp FullStack de Peñascal. Una Yinkana dirigida a coders.',
-        image: 'BilboStack.jpeg',
-        image2: 'Yinkana.png',
+        image: '/proyectos/BilboStack.jpeg',
+        image2: '/proyectos/Yinkana.png',
+        imagecuadrada: '/proyectos/cuadradas/7.png',
         GitHub: 'https://github.com/A-Goffard/memory',
         // Otros detalles del proyecto
     },
@@ -66,7 +70,7 @@ import { ref } from 'vue';
 
 }
 .fitxa{
-  max-width: 35rem;
+  max-width: 25rem;
 
 }
 </style>
