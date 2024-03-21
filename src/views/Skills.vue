@@ -61,9 +61,7 @@ button {
     color: rgb(55, 28, 230);
 }
 .btn-html:hover {
-    background-color: rgb(79, 176, 232);
-    color: rgb(55, 28, 230);
-    box-shadow: 0rem 0rem 0.5rem 0.1rem var(--lilaboton);
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(79, 176, 232);
 }
 
 .btn-css {
@@ -73,12 +71,18 @@ button {
 .img-css {
     background-color: rgb(105, 242, 97);
 }
+.btn-css:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(105, 242, 97);
+}
 .btn-canva {
     background-color: rgb(255, 232, 55);
     color: rgb(222, 121, 12);
 }
 .img-canva {
     background-color: rgb(255, 232, 55);
+}
+.btn-canva:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(255, 232, 55);
 }
 .btn-figma {
     background-color: rgb(209, 68, 127);
@@ -87,12 +91,18 @@ button {
 .img-figma {
     background-color: rgb(209, 68, 127);
 }
+.btn-figma:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(209, 68, 127);
+}
 .btn-js {
     background-color: rgb(226, 43, 89);
     color: pink;
 }
 .img-js {
     background-color: rgb(226, 43, 89);
+}
+.btn-js:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(226, 43, 89);
 }
 .btn-trello {
     background-color: rgb(36, 247, 205);
@@ -101,6 +111,9 @@ button {
 .img-trello {
     background-color: rgb(36, 247, 205);
 }
+.btn-trello:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(36, 247, 205);
+}
 .btn-vue {
     background-color: rgb(34, 131, 15);
     color: rgb(142, 250, 109);
@@ -108,17 +121,29 @@ button {
 .img-vue {
     background-color: rgb(34, 131, 15);
 }
+.btn-vue:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(34, 131, 15);
+}
 .btn-scrum {
     background-color: rgb(151, 82, 14);
     color: rgb(250, 201, 169);
+}
+.btn-scrum:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(151, 82, 14);
 }
 .btn-agile {
     background-color: rgb(229, 103, 233);
     color: rgb(88, 22, 87);
 }
+.btn-agile:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(229, 103, 233);
+}
 .btn-coordinacion {
     background-color: rgb(192, 226, 43);
     color: rgb(75, 103, 19);
+}
+.btn-coordinacion:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(192, 226, 43);
 }
 .btn-comunicacion {
     background-color: rgb(128, 10, 114);
@@ -126,6 +151,9 @@ button {
 }
 .img-comunicacion {
     background-color: rgb(128, 10, 114);
+}
+.btn-comunicacion:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(128, 10, 114);
 }
 
 </style>
