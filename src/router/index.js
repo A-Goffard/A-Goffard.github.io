@@ -6,6 +6,7 @@ import Skills from '../views/Skills.vue';
 import Proyectos from '../views/Proyectos.vue';
 import Contacto from '../views/Contacto.vue';
 
+
 const routes = [
   {
     path: '/',

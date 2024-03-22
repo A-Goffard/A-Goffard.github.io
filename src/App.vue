@@ -35,7 +35,10 @@ export default {
   text-align: center;
   background-color: var(--rosahipermegaclarito);
 }
-
+p{
+  font-size: 1.5rem;
+  margin: 1rem;
+}
 :root {
   --moradomuyoscuro: #490946;
   --moradooscuro: #5e0f5a;
