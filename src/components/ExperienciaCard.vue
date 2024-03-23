@@ -1,15 +1,15 @@
-<!-- formacionCard.vue -->
+<!-- experienciaCard.vue -->
 <template>
-    <div class="formacion-card">
-      <h3>{{ formacion.title }}</h3>
-      <p>{{ formacion.description }}</p>
+    <div class="experiencia-card">
+      <h3>{{ experiencia.title }}</h3>
+      <p>{{ experiencia.description }}</p>
     </div>
   </template>
   
   <script>
   export default {
     props: {
-      formacion: {
+      experiencia: {
         type: Object,
         required: true
       }
@@ -18,7 +18,7 @@
   </script>
   
   <style scoped>
-  .formacion-card{
+  .experiencia-card{
     margin: 1rem;
     border-radius: 0.5rem;
     border: solid 0.15rem var(--moradooscuro);
@@ -27,7 +27,7 @@
     box-shadow: 0rem 0rem 1rem 0.1rem var(--lilaboton);
     transition: 250ms ease;
   }
-  .formacion-card:hover{
+  .experiencia-card:hover{
     box-shadow: 0rem 0rem 1rem 0.3rem var(--lilabotonhover);
     border: solid 0.15rem var(--moradomuyoscuro);
   }

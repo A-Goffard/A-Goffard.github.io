@@ -1,15 +1,29 @@
 <template>
     <div>
         <h1 class="titulo">Sobre mí</h1>
-        <div>
+        <div class="cuerpo">
             <p>
                 Me gustan los retos y no paro de aprender cosas nuevas y desarrollar nuevos proyectos. Soy formadora y divulgadora, diseño cursos, material didáctico, experiencias y talleres entre otros.
             </p>
-            <div class="contenedor-formaciones">
-                <div class="fitxas" v-for="formacion in formaciones" :key="formacion.id">
-                    <FormacionCard class="fitxa" :formacion="formacion" />
-                  </div>
+            <div class="contenedor">
+                <div>
+                    <h2>Formación</h2>
+                    <div class="contenedor-formaciones">
+                        <div class="fitxas" v-for="formacion in formaciones" :key="formacion.id">
+                        <FormacionCard class="fitxa" :formacion="formacion" />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Experiencia laboral</h2>
+                    <div class="contenedor-experiencias">
+                        <div class="fitxas" v-for="experiencia in experiencias" :key="experiencia.id">
+                        <ExperienciaCard class="fitxa" :experiencia="experiencia" />
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </template>
@@ -17,6 +31,8 @@
 <script setup>
 
 import FormacionCard from '../components/FormacionCard.vue';
+import ExperienciaCard from '../components/ExperienciaCard.vue';
+
 
 import { ref } from 'vue';
 
@@ -48,23 +64,23 @@ import { ref } from 'vue';
     },
     {
         id: 6,
-        title: 'Monitora de Mindfulness',
-        description: 'Monitora de Mindfulness',
-    },
-    {
-        id: 7,
         title: 'Formador de formadores',
         description: 'Formador de formadores',
     },
     {
-        id: 8,
+        id: 7,
         title: 'Docencia para la teleformación',
         description: 'Docencia para la teleformación',
     },
     {
-        id: 9,
+        id: 8,
         title: 'Monitora de ocio y tiempo libre',
         description: 'Monitora de ocio y tiempo libre',
+    },
+    {
+        id: 9,
+        title: 'Monitora de Mindfulness',
+        description: 'Monitora de Mindfulness',
     },
     {
         id: 10,
@@ -100,15 +116,50 @@ import { ref } from 'vue';
     // Agrega más proyectos según sea necesario
   ]);
 
+  const experiencias= ref([
+    {
+        id: 1,
+        title: 'CEO de Geobizi',
+        date: '2019-2024',
+        description: 'CEO, formadora y técnico especialista en Geobizi. Promotora, formadora, técnico especialista en micropaleontología, guía, coordinadora, diseñadora, monitora y divulgadora.',
+    },
+    {
+        id: 2,
+        title: 'Personal investigador contratado UPV-EHU',
+        date: '2017-2018',
+        description: 'Trabajo principal como técnico en micropaleontología en el departamento de estratigrafía y paleontología de la Facultad de Ciencia y Tecnología. Análisis y caracterización de muestras marinas y estuarinas de foraminíferos bentónicos.',
+    },
+    {
+        id: 3,
+        title: 'Otros trabajos',
+        date: '< 2017',
+        description: 'He trabajado en diferentes ámbitos a lo largo de los años: Hostelería, limpieza, clases particulares...',
+    },
+    // Agrega más trabajos según sea necesario
+  ]);
+
+
 </script>
 
 <style scoped>
 .contenedor-formaciones {
+    max-width: 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenedor-experiencias {
+    max-width: 37rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .fitxas{
     margin: 0rem 1rem;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 </style>

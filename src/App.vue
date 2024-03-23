@@ -56,6 +56,16 @@ h1 {
   margin: 1rem;
   font-size: 3rem;
 }
+h2 {
+  color: var(--moradomuyoscuro);
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+h3 {
+  color: var(--moradomuyoscuro);
+  margin: 1rem;
+  font-size: 2rem;
+}
 
 </style>
 
