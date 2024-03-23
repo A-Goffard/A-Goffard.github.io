@@ -4,17 +4,17 @@
         <div>
             <p>Puedes contactar conmigo a través de LinkedIn o enviandome un mail</p>
             <div>
-                <!-- GitHub -->
-                <a :href="githubLink" target="_blank">
-                  <img src="/contacto/github.png" alt="GitHub">
-                </a>
-                <!-- LinkedIn -->
-                <a :href="linkedinLink" target="_blank">
-                  <img src="/contacto/linkedin.png" alt="LinkedIn">
-                </a>
-                <!-- Email -->
-                <img src="/contacto/mail.png" alt="Email" @click="sendEmail">
-              </div>
+              <!-- GitHub -->
+              <a :href="githubLink" target="_blank">
+                <img src="/contacto/github.png" alt="GitHub">
+              </a>
+              <!-- LinkedIn -->
+              <a :href="linkedinLink" target="_blank">
+                <img src="/contacto/linkedin.png" alt="LinkedIn">
+              </a>
+              <!-- Email -->
+              <img src="/contacto/mail.png" alt="Email" @click="sendEmail">
+            </div>
         </div>
     </div>
 </template>

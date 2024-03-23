@@ -70,7 +70,6 @@ import { ref } from 'vue';
 
 }
 .fitxa{
-  max-width: 25rem;
-
+  max-width: 30rem;
 }
 </style>

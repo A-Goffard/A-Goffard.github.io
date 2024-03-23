@@ -131,4 +131,5 @@ const props = defineProps({
     background-color: var(--lilabotonhover); 
     color: var(--rosasuperclarito); 
 }
+
 </style>

@@ -101,8 +101,8 @@ function cambiarColoresDrack() {
   document.documentElement.style.setProperty('--rosa', '#838383');
   document.documentElement.style.setProperty('--rosaclaro', '#585858');
   document.documentElement.style.setProperty('--rosasuperclarito', '#363636');
-  document.documentElement.style.setProperty('--rosahipermegaclarito', '#1b1b1b');
-  document.documentElement.style.setProperty('--blanco', '#000000');
+  document.documentElement.style.setProperty('--rosahipermegaclarito', '#222222');
+  document.documentElement.style.setProperty('--blanco', '#202020');
   document.documentElement.style.setProperty('--black', '#ffffff');
   cambiarClaseBanner('banner6');
 }
@@ -140,8 +140,8 @@ p {
   --rosa: #838383;
   --rosaclaro: #585858;
   --rosasuperclarito: #363636;
-  --rosahipermegaclarito: #1b1b1b;
-  --blanco: #000000;
+  --rosahipermegaclarito: #222222;
+  --blanco: #202020;
 } */
 
 h1 {
