@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav :bannerClass="bannerClass" />
-    <div>
+    <div class="colorines">
       <button class="lila" @click="cambiarColoresLila"></button>
       <button class="green" @click="cambiarColoresVerde"></button>
       <button class="blue" @click="cambiarColoresBlue"></button>
@@ -132,17 +132,6 @@ p {
   --blanco: #ffffff;
   --black: #000000;
 }
-/* .colores {
-  --moradomuyoscuro: #e9e9e9;
-  --moradooscuro: #cecece;
-  --lilaboton: #a0a0a0;
-  --lilabotonhover: #9e9e9e;
-  --rosa: #838383;
-  --rosaclaro: #585858;
-  --rosasuperclarito: #363636;
-  --rosahipermegaclarito: #222222;
-  --blanco: #202020;
-} */
 
 h1 {
   color: var(--moradomuyoscuro);

@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Inicio from '../views/Inicio.vue';
 import SobreMi from '../views/SobreMi.vue';
-import Skills from '../views/Skills.vue';
 import Proyectos from '../views/Proyectos.vue';
 import Contacto from '../views/Contacto.vue';
 
@@ -16,11 +15,6 @@ const routes = [
     path: '/sobremi',
     name: 'SobreMi',
     component: SobreMi,
-  },
-  {
-    path: '/skills',
-    name: 'Skills',
-    component: Skills,
   },
   {
     path: '/proyectos',

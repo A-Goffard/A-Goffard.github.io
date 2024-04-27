@@ -6,7 +6,7 @@
                 Me gustan los retos y no paro de aprender cosas nuevas y desarrollar nuevos proyectos. Soy formadora y divulgadora, diseño cursos, material didáctico, experiencias y talleres entre otros.
             </p>
             <div class="contenedor">
-                <div>
+                <div class="formacion">
                     <h2>Formación</h2>
                     <div class="contenedor-formaciones">
                         <div class="fitxas" v-for="formacion in formaciones" :key="formacion.id">
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="experiencia">
                     <h2>Experiencia laboral</h2>
                     <div class="contenedor-experiencias">
                         <div class="fitxas" v-for="experiencia in experiencias" :key="experiencia.id">
@@ -30,8 +30,8 @@
 
 <script setup>
 
-import FormacionCard from '../components/FormacionCard.vue';
-import ExperienciaCard from '../components/ExperienciaCard.vue';
+import FormacionCard from '../components/formariencia/FormacionCard.vue';
+import ExperienciaCard from '../components/formariencia/ExperienciaCard.vue';
 
 
 import { ref } from 'vue';

@@ -3,12 +3,10 @@
         <h1 class="titulo">Skills</h1>
         <div class="contenedor">
             <div class="contenedor-iconos">
-                <button class="btn-scrum">Scrum</button>
                 <button class="btn-creativa">Creativa</button>
                 <button class="btn-adaptable">Adaptable</button>
-                <button class="btn-agile">Agile</button>
                 <button class="btn-coordinacion">Coordinación de equipos</button>
-                <button class="btn-comunicacion"><img class="iconos img-comunicacion" src="/skills/comunicacion.png" alt="">Comunicación</button>
+                <button class="btn-comunicacion">Comunicación</button>
             </div>
         </div>
     </div>
