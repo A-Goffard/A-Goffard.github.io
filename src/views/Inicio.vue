@@ -241,5 +241,8 @@ button:hover{
 .yomini {
   display: block;
 }
+.titulo {
+  width: 15rem;
+}
 }
 </style>
