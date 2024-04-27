@@ -12,14 +12,15 @@
 <style scoped>
 
 img{
-    max-width: 30rem;
+    max-width: 15rem;
     border-radius: 0.5rem;
 }
 div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 .yo {

@@ -1,9 +1,17 @@
 <template>
+    <div>
+
+    
     <div :class="bannerClass.value" id="banner">
         <button @click="goTo('/')" class="boton">Inicio</button>
-        <button @click="goTo('/sobremi')" class="boton">Sobre mí</button>
         <button @click="goTo('/proyectos')" class="boton">Proyectos</button>
         <button @click="goTo('/contacto')" class="boton">Contacto</button>
+    </div>
+    <div id="minibanner">
+        <button @click="goTo('/')" class="boton">Inicio</button>
+        <button @click="goTo('/proyectos')" class="boton">Proyectos</button>
+        <button @click="goTo('/contacto')" class="boton">Contacto</button>
+    </div>
     </div>
 </template>
 
@@ -127,6 +135,15 @@ const props = defineProps({
 .boton:hover {
     background-color: var(--lilabotonhover); 
     color: var(--rosasuperclarito); 
+}
+
+@media screen and (max-width: 671px) {
+  #banner {
+    display: none;
+  }
+  #minibanner{
+    display: block;
+  }
 }
 
 </style>

@@ -1,22 +1,55 @@
 <template>
-    <div>
-        <h1 class="titulo">Bienvenido a mi Portfolio</h1>
-        <p>Cotillea todo lo que quieras...</p>
-        <div class="component-container"></div>
-        <div class="sobremi">
-          <Yo/>
-          <SobreMiResumen/>
-
-        </div>
-
-        <Stack/>
-        <Skills/>
-        <Metodologias/>
+  <div>
+    <h1 class="titulo">Bienvenido a mi Portfolio</h1>
+    <p>Cotillea todo lo que quieras...</p>
+    <div class="sobremi">
+      <YoMini @click="toggleResumen" class="yo yomini" />
+      <Yo @click="toggleResumen" class="yo yomaxi"/>
+      <SobreMiResumen class="resumen oculto"/>
     </div>
+    <Stack/>
+    <Skills/>
+    <Metodologias/>
+    <div class="contenedor">
+      <div class="experiencia">
+        <div class="ampliacion">
+          <h2>Experiencia laboral</h2>
+          <button class="btnExpP" @click="toggleExperiencia">
+            +
+          </button>
+          <button class="btnExpN oculto" @click="toggleExperiencia">
+            -
+          </button>
+        </div>
+        <div class="contenedor-experiencias oculto">
+          <div class="fitxas" v-for="experiencia in experiencias" :key="experiencia.id">
+          <ExperienciaCard class="fitxa" :experiencia="experiencia" />
+          </div>
+        </div>
+      </div>
+      <div class="formacion">
+        <div class="ampliacion">
+          <h2>Formación</h2>
+          <button class="btnFormP" @click="toggleFormacion">
+            +
+          </button>
+          <button class="btnFormN oculto" @click="toggleFormacion">
+            -
+          </button>
+        </div>
+        <div class="contenedor-formaciones oculto">
+          <div class="fitxas" v-for="formacion in formaciones" :key="formacion.id">
+          <FormacionCard class="fitxa" :formacion="formacion" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
 import Yo from '../components/sobremi/Yo.vue'
+import YoMini from '../components/sobremi/YoMini.vue'
 import Stack from '../components/sobremi/Stack.vue'
 import Skills from '../components/sobremi/Skills.vue'
 import Metodologias from '../components/sobremi/Metodologias.vue'
@@ -24,8 +57,30 @@ import SobreMiResumen from '../components/sobremi/SobreMiResumen.vue'
 import FormacionCard from '../components/formariencia/FormacionCard.vue';
 import ExperienciaCard from '../components/formariencia/ExperienciaCard.vue';
 
-
 import { ref } from 'vue';
+
+const toggleResumen = () => {
+  const contenedorResumen = document.querySelector('.resumen');
+  contenedorResumen.classList.toggle('oculto');
+};
+
+const toggleExperiencia = () => {
+  const contenedorExperiencias = document.querySelector('.contenedor-experiencias');
+  contenedorExperiencias.classList.toggle('oculto');
+  const botonNegativo = document.querySelector('.btnExpP');
+  botonNegativo.classList.toggle('oculto');
+  const botonPositivo = document.querySelector('.btnExpN');
+  botonPositivo.classList.toggle('oculto');
+};
+
+const toggleFormacion = () => {
+  const contenedorFormaciones = document.querySelector('.contenedor-formaciones');
+  contenedorFormaciones.classList.toggle('oculto');
+  const botonNegativo = document.querySelector('.btnFormP');
+  botonNegativo.classList.toggle('oculto');
+  const botonPositivo = document.querySelector('.btnFormN');
+  botonPositivo.classList.toggle('oculto');
+};
 
   const formaciones= ref([
     {
@@ -133,7 +188,9 @@ import { ref } from 'vue';
 </script>
 
 <style scoped>
-
+.yomini {
+  display: none;
+}
 div{
   display: flex;
   flex-direction: column;
@@ -141,12 +198,48 @@ div{
   align-items: center;
 
 }
-.component-container {
-  display: flex;
-  flex-wrap: wrap;
-}
 .sobremi{
   display: flex;
   flex-wrap: wrap;
+}
+.fitxas{
+  margin: 0rem 1rem;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.oculto {
+  display: none;
+}
+.ampliacion {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  margin: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--moradooscuro);
+  color: var(--rosaclaro);
+  transition: 250ms ease;
+}
+button:hover{
+  box-shadow: 0rem 0rem 0.5rem 0.1rem var(--lilabotonhover);
+  border: solid 0.15rem var(--moradomuyoscuro);
+  cursor: pointer;
+}
+.yo:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 552px) {
+.yomaxi {
+  display: none;
+}
+.yomini {
+  display: block;
+}
 }
 </style>

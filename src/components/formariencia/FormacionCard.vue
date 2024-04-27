@@ -19,6 +19,7 @@
   
   <style scoped>
   .formacion-card{
+    width: 32rem;
     margin: 1rem;
     border-radius: 0.5rem;
     border: solid 0.15rem var(--moradooscuro);
@@ -42,13 +43,13 @@
     background-color: var(--blanco);
   }
 
-  img {
-    background-color: var(--blanco);
-    max-width: 95%;
-    max-height: 100%;
+  @media screen and (max-width: 552px) {
+    .formacion-card{
+    width: 15rem;
     margin: 0.5rem;
-    border-radius: 0.5rem;
-    border: solid 1px var(--rosaclaro);
+
   }
+
+}
   </style>
   
