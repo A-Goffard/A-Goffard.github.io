@@ -136,7 +136,9 @@ const props = defineProps({
     background-color: var(--lilabotonhover); 
     color: var(--rosasuperclarito); 
 }
-
+#minibanner{
+    display: none;
+  }
 @media screen and (max-width: 671px) {
   #banner {
     display: none;
@@ -144,6 +146,10 @@ const props = defineProps({
   #minibanner{
     display: block;
   }
+  .boton {
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem;
+}
 }
 
 </style>
