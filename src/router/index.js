@@ -2,6 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Inicio from '../views/Inicio.vue';
 import Proyectos from '../views/Proyectos.vue';
 import Contacto from '../views/Contacto.vue';
+import BilboStackView from '../views/proyectos/BilboStackView.vue';
+import MangaPowerView from '../views/proyectos/MangaPowerView.vue';
+import HackathonF5View from '../views/proyectos/HackathonF5View.vue';
+import MemoryGameView from '../views/proyectos/MemoryGameView.vue';
+import MarifarmaView from '../views/proyectos/MarifarmaView.vue';
 
 
 const routes = [
@@ -19,6 +24,31 @@ const routes = [
     path: '/contacto',
     name: 'Contacto',
     component: Contacto,
+  },
+  {
+    path: '/proyectos/bilbostack',
+    name: 'BilboStack',
+    component: BilboStackView,
+  },
+  {
+    path: '/proyectos/manga-power',
+    name: 'MangaPower',
+    component: MangaPowerView,
+  },
+  {
+    path: '/proyectos/hackathonF5-2024',
+    name: 'HackathonF5',
+    component: HackathonF5View,
+  },
+  {
+    path: '/proyectos/empezando-con-vue-3',
+    name: 'MemoryGame',
+    component: MemoryGameView,
+  },
+  {
+    path: '/proyectos/marifarma',
+    name: 'Marifarma',
+    component: MarifarmaView,
   },
 ];
 

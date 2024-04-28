@@ -4,11 +4,12 @@
         <h1>Proyectos</h1>
         <div class="project-contenedor">
           <div v-for="project in projects" :key="project.id">
-            <ProjectCard class="fitxa" :project="project" />
+            <router-link :to="'/project/' + project.title.toLowerCase().replace(/\s+/g, '-')">
+              <ProjectCard class="fitxa" :project="project" />
+            </router-link>
           </div>
         </div>
     </div>
-    <router-link ></router-link>
   </div>
 </template>
 
@@ -21,7 +22,7 @@ import { ref } from 'vue';
 const projects= ref([
 {
   id: 1,
-  title: 'Proyecto BilboStack',
+  title: 'BilboStack',
   description: 'Es un proyecto desarrollado para presentar una actividad desde el contexto del Bootcamp FullStack de Peñascal. Una Yinkana dirigida a coders.',
   image: '/proyectos/BilboStack.jpeg',
   image2: '/proyectos/Yinkana.png',
@@ -61,7 +62,7 @@ const projects= ref([
 },
 {
   id: 5,
-  title: 'Marifarma tienda online',
+  title: 'Marifarma',
   description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Una tienda online para desarroyar los conocimientos en JavaScript.',
   image: '/proyectos/marifarma.png',
   image2: '/proyectos/carrito-marifarma.png',

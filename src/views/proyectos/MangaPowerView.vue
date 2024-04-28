@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>BilboStack</h1>
+        <h1>Manga Power</h1>
     </div>
 </template>
 

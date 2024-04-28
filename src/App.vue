@@ -115,6 +115,7 @@ function cambiarColoresDrack() {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   background-color: var(--rosahipermegaclarito);
+  text-decoration: none;
 }
 p {
   font-size: 1.5rem;

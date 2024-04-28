@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>BilboStack</h1>
+        <h1>HackathonF5 2024</h1>
     </div>
 </template>
 

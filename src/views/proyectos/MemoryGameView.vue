@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>BilboStack</h1>
+        <h1>Memory Game</h1>
     </div>
 </template>
 

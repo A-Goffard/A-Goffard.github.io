@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>BilboStack</h1>
+        <h1>Marifarma</h1>
     </div>
 </template>
 
