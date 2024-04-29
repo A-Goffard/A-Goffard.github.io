@@ -4,7 +4,7 @@
         <h1>Proyectos</h1>
         <div class="project-contenedor">
           <div v-for="project in projects" :key="project.id">
-            <router-link :to="'/project/' + project.title.toLowerCase().replace(/\s+/g, '-')">
+            <router-link :to="'/proyectos/' + project.id + '/' + project.title.toLowerCase().replace(/\s+/g, '-')">
               <ProjectCard class="fitxa" :project="project" />
             </router-link>
           </div>
