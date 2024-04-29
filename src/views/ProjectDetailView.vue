@@ -1,25 +1,21 @@
 <template>
-  <div>
     <div>
-        <h1>Proyectos</h1>
-        <div class="project-contenedor">
-          <div v-for="project in projects" :key="project.id">
-            <router-link :to="'/proyectos/' + project.id">
-              <ProjectCard class="fitxa" :project="project" />
-            </router-link>
-          </div>
-        </div>
+      <button @click="volver">Volver</button>
+      <div class="container-proyect">
+          <h1>{{ project.title }}</h1>
+          <p>{{ project.description }}</p>
+          <img :src="project.image" alt="Project Image">
+          <!-- Aquí puedes mostrar otros detalles del proyecto según sea necesario -->
+      </div>
     </div>
-  </div>
-</template>
+  </template>
+  
+  <script setup>
+  import { ref, computed } from 'vue';
+  import { useRouter } from 'vue-router';
 
-<script setup>
-
-import ProjectCard from '../components/ProjectCard.vue';
-
-import { ref } from 'vue';
-
-const projects= ref([
+  const router = useRouter();
+  const projects= ref([
 {
   id: 1,
   title: 'BilboStack',
@@ -72,18 +68,67 @@ const projects= ref([
 },
   // Agrega más proyectos según sea necesario
 ]);
-
-</script>
+  
+  const volver = () => {
+    // Obtenemos la ruta actual
+    const route = router.currentRoute.value;
+    
+    // Obtenemos el ID del proyecto de la ruta
+    const projectId = route.params.id;
+    
+    // Navegar de regreso a la lista de proyectos
+    router.push({ name: 'Proyectos' });
+  };
+  
+  // Buscamos el proyecto correspondiente en la lista de proyectos
+  const project = computed(() => {
+    const projectId = router.currentRoute.value.params.id;
+    return projects.value.find(proj => proj.id === parseInt(projectId));
+  });
+  </script>
 
 <style scoped>
-.project-contenedor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container-proyect{
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: solid 0.15rem var(--moradooscuro);
+  padding: 1rem;
+  background-color: var(--blanco);
+  box-shadow: 0rem 0rem 1rem 0.1rem var(--lilaboton);
+  transition: 250ms ease;
+}
+.container-proyect:hover{
+  box-shadow: 0rem 0rem 1rem 0.3rem var(--lilabotonhover);
+  border: solid 0.15rem var(--moradomuyoscuro);
+}
+h2 {
+  color: var(--moradomuyoscuro);
+  margin: 0.5rem;
+  background-color: var(--blanco);
+}
+h1 {
+    color: var(--moradomuyoscuro);
+    margin: 0.5rem;
+    background-color: var(--blanco);
+    font-size: 3rem;
+  }
+p {
+  background-color: var(--blanco);
+}
+button {
+    padding: 0.7rem 1.2rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--lilaboton);
+    color: var(--blanco);
+    font-size: large;
+    transition: 250ms ease;
+}
+button:hover {
+    background-color: var(--lilabotonhover); 
+    color: var(--rosasuperclarito); 
+    cursor: pointer;
+}
 
-}
-.fitxa{
-  max-width: 40rem;
-}
-</style>
+  </style>
+  

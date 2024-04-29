@@ -234,6 +234,19 @@ button:hover{
 .yo:hover {
   cursor: pointer;
 }
+.resumen {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: solid 0.15rem var(--moradooscuro);
+  padding: 1rem;
+  background-color: var(--blanco);
+  box-shadow: 0rem 0rem 1rem 0.1rem var(--lilaboton);
+  transition: 250ms ease;
+}
+.resumen:hover{
+  box-shadow: 0rem 0rem 1rem 0.3rem var(--lilabotonhover);
+  border: solid 0.15rem var(--moradomuyoscuro);
+}
 @media screen and (max-width: 552px) {
 .yomaxi {
   display: none;

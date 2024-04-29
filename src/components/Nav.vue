@@ -135,6 +135,7 @@ const props = defineProps({
 .boton:hover {
     background-color: var(--lilabotonhover); 
     color: var(--rosasuperclarito); 
+    cursor: pointer;
 }
 #minibanner{
     display: none;
