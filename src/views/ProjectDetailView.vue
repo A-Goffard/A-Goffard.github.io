@@ -4,7 +4,7 @@
       <div class="container-proyect">
           <h1>{{ project.title }}</h1>
           <p>{{ project.description }}</p>
-          <img :src="project.image" alt="Project Image">
+          <img :src="project.image" alt="Project Image" class="project-image">
           <!-- Aquí puedes mostrar otros detalles del proyecto según sea necesario -->
       </div>
     </div>
@@ -20,6 +20,9 @@
   id: 1,
   title: 'BilboStack',
   description: 'Es un proyecto desarrollado para presentar una actividad desde el contexto del Bootcamp FullStack de Peñascal. Una Yinkana dirigida a coders.',
+  descripcionLarga: '',
+  miDesempeno: '',
+  contextoDesarrollo: '',
   image: '/proyectos/BilboStack.jpeg',
   image2: '/proyectos/Yinkana.png',
   imagecuadrada: '/proyectos/cuadradas/7.png',
@@ -30,6 +33,9 @@
   id: 2,
   title: 'Manga Power',
   description: 'Es un proyecto desarrollado en un ámbito educativo para realizar un CRUD completo con una "base de datos" de tipo Json Server y la utilización de una API externa relacioanda con el manga/anime.',
+  descripcionLarga: '',
+  miDesempeno: '',
+  contextoDesarrollo: '',
   image: '/proyectos/select.png',
   image2: '/proyectos/pokedex.png',
   imagecuadrada: '/proyectos/cuadradas/9.png',
@@ -40,6 +46,9 @@
   id: 3,
   title: 'HackathonF5 2024',
   description: 'Este es el proyecto de EcoPop que desarrollamos para el Hackathon de F5 en 2024 enfocado a estudiantes. Un marcketplace en 48 horas.',
+  descripcionLarga: '',
+  miDesempeno: '',
+  contextoDesarrollo: '',
   image: '/proyectos/conclusiones.jpeg',
   image2: '/proyectos/Diploma.png',
   imagecuadrada: '/proyectos/cuadradas/8.png',
@@ -50,6 +59,9 @@
   id: 4,
   title: 'Empezando con Vue 3',
   description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Se trataba de montar un proyecto simple con Vue 3 Composition API.',
+  descripcionLarga: '',
+  miDesempeno: '',
+  contextoDesarrollo: '',
   image: '/proyectos/memory.png',
   image2: '/proyectos/contacto.png',
   imagecuadrada: '/proyectos/cuadradas/6.png',
@@ -60,6 +72,9 @@
   id: 5,
   title: 'Marifarma',
   description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Una tienda online para desarroyar los conocimientos en JavaScript.',
+  descripcionLarga: '',
+  miDesempeno: '',
+  contextoDesarrollo: '',
   image: '/proyectos/marifarma.png',
   image2: '/proyectos/carrito-marifarma.png',
   imagecuadrada: '/proyectos/cuadradas/1.png',
@@ -128,6 +143,10 @@ button:hover {
     background-color: var(--lilabotonhover); 
     color: var(--rosasuperclarito); 
     cursor: pointer;
+}
+
+.project-image {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
 }
 
   </style>
