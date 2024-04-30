@@ -4,6 +4,9 @@
     <div class="container-interior">
       <p>Puedes contactar conmigo a través de LinkedIn o enviándome un correo electrónico</p>
       <div>
+        <div class="mensajito">
+          <p>{{ currentMessage }}</p>
+        </div>
         <!-- GitHub -->
         <a :href="githubLink" target="_blank" @mouseover="showMessage('github')" @mouseleave="hideMessage()">
           <img src="/contacto/github.png" alt="GitHub" title="Usuario GitHub: A-Goffard">
@@ -18,9 +21,7 @@
         <img src="/contacto/mail.png" alt="Email" @click="sendEmail" title="Email de contacto: aintzagoffard@gmail.com" @mouseover="showMessage('email')" @mouseleave="hideMessage()">
         <span class="tooltip" v-if="showEmailMessage">aintzagoffard@gmail.com</span>
       </div>
-      <div class="mensajito">
-        <p>{{ currentMessage }}</p>
-      </div>
+
     </div>
   </div>
 </template>
