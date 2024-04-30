@@ -9,16 +9,16 @@
         </div>
         <!-- GitHub -->
         <a :href="githubLink" target="_blank" @mouseover="showMessage('github')" @mouseleave="hideMessage()">
-          <img src="/contacto/github.png" alt="GitHub" title="Usuario GitHub: A-Goffard">
+          <img class="icon" src="/contacto/github.png" alt="GitHub" title="Usuario GitHub: A-Goffard">
           <span class="tooltip" v-if="showGithubMessage">A-Goffard</span>
         </a>
         <!-- LinkedIn -->
         <a :href="linkedinLink" target="_blank" @mouseover="showMessage('linkedin')" @mouseleave="hideMessage()">
-          <img src="/contacto/linkedin.png" alt="LinkedIn" title="Nombre y Apellido: Aintzane Goffard Sevillano">
+          <img class="icon" src="/contacto/linkedin.png" alt="LinkedIn" title="Nombre y Apellido: Aintzane Goffard Sevillano">
           <span class="tooltip" v-if="showLinkedinMessage">Aintzane Goffard Sevillano</span>
         </a>
         <!-- Email -->
-        <img src="/contacto/mail.png" alt="Email" @click="sendEmail" title="Email de contacto: aintzagoffard@gmail.com" @mouseover="showMessage('email')" @mouseleave="hideMessage()">
+        <img class="icon" src="/contacto/mail.png" alt="Email" @click="sendEmail" title="Email de contacto: aintzagoffard@gmail.com" @mouseover="showMessage('email')" @mouseleave="hideMessage()">
         <span class="tooltip" v-if="showEmailMessage">aintzagoffard@gmail.com</span>
       </div>
 
@@ -133,6 +133,18 @@ img:hover {
   padding: 1rem;
   box-shadow: 0rem 0rem 1rem 0.1rem var(--lilaboton);
   transition: 250ms ease;
+}
+.icon {
+  width: 4.5rem;
+  border-radius: 0.9rem;
+  border: solid 0.15rem var(--moradooscuro);
+  padding: 0.3rem;
+  background-color: white;
+  box-shadow: 0rem 0rem 1rem 0.1rem var(--lilaboton);
+}
+.icon:hover{
+  box-shadow: 0rem 0rem 1rem 0.3rem var(--lilabotonhover);
+  border: solid 0.15rem var(--moradomuyoscuro);
 }
 @media screen and (max-width: 450px) {
   .mensajito {
