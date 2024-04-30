@@ -157,6 +157,7 @@ div {
 .cont-contexto,
 .cont-descripcionL,
 .cont-github,
+a,
 .cont-resumen {
   background-color: var(--blanco);
 }
@@ -198,6 +199,15 @@ img {
 }
 .icon {
   width: 4.5rem;
+  border-radius: 0.9rem;
+  border: solid 0.15rem var(--moradooscuro);
+  padding: 0.3rem;
+  background-color: white;
+  box-shadow: 0rem 0rem 1rem 0.1rem var(--lilaboton);
+}
+.icon:hover{
+  box-shadow: 0rem 0rem 1rem 0.3rem var(--lilabotonhover);
+  border: solid 0.15rem var(--moradomuyoscuro);
 }
   </style>
   
