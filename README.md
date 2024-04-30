@@ -1,4 +1,12 @@
-# portfolio
+# Portfolio personal
+
+Aquí podrás encontrar información sobre mí y los proyectos que voy realizando. 
+
+El portfolio es en sí mismo otro proyecto más realizado con Vue 3. 
+
+¿Quieres hechar un ojo?
+
+
 
 ## Project setup
 ```
