@@ -192,6 +192,7 @@ button:hover {
 
 .project-image {
   width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  
 }
 
 img {
