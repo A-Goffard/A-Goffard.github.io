@@ -11,7 +11,7 @@
 
     <div class="cont-video" v-if="project.id === 1">
       <h2>Video</h2>
-      <iframe width="560" height="315" :src="project.video" frameborder="0" allowfullscreen></iframe>
+      <iframe :src="project.video" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="cont-contexto">
@@ -140,7 +140,7 @@ div {
   align-items: center;
 }
 .cont-general{
-  max-width: 75rem;
+  width: 85%;
   margin: 1rem;
   border-radius: 0.5rem;
   border: solid 0.15rem var(--moradooscuro);
@@ -196,7 +196,7 @@ button:hover {
 }
 
 img {
-  max-width: 70rem;
+  width: 100%;
 }
 .icon {
   width: 4.5rem;
@@ -210,5 +210,23 @@ img {
   box-shadow: 0rem 0rem 1rem 0.3rem var(--lilabotonhover);
   border: solid 0.15rem var(--moradomuyoscuro);
 }
+
+.cont-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporción 16:9 (9 / 16 * 100) */
+  overflow: hidden;
+}
+
+.cont-video iframe {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
   </style>
   
