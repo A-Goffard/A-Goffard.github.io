@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="titulo">Bienvenido a mi Portfolio</h1>
+    <h1 class="titulo">Bienvenid@ a mi Portfolio</h1>
     <p>Cotillea todo lo que quieras...</p>
     <div class="sobremi">
       <YoMini @click="toggleResumen" class="yo yomini" />

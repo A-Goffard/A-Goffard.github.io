@@ -33,7 +33,7 @@ const projects= ref([
 {
   id: 2,
   title: 'Manga Power',
-  description: 'Es un proyecto desarrollado en un ámbito educativo para realizar un CRUD completo con una "base de datos" de tipo Json Server y la utilización de una API externa relacioanda con el manga/anime.',
+  description: 'Es un proyecto desarrollado en un ámbito educativo para realizar un CRUD completo con una "base de datos" de tipo Json Server y la utilización de una API externa relacionada con el manga/anime.',
   image: '/proyectos/select.png',
   image2: '/proyectos/pokedex.png',
   imagecuadrada: '/proyectos/cuadradas/9.png',
@@ -43,7 +43,7 @@ const projects= ref([
 {
   id: 3,
   title: 'HackathonF5 2024',
-  description: 'Este es el proyecto de EcoPop que desarrollamos para el Hackathon de F5 en 2024 enfocado a estudiantes. Un marcketplace en 48 horas.',
+  description: 'Este es el proyecto de EcoPop que desarrollamos para el Hackathon de F5 en 2024 enfocado a estudiantes. Un marketplace en 48 horas.',
   image: '/proyectos/conclusiones.jpeg',
   image2: '/proyectos/Diploma.png',
   imagecuadrada: '/proyectos/cuadradas/8.png',
@@ -63,7 +63,7 @@ const projects= ref([
 {
   id: 5,
   title: 'Marifarma',
-  description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Una tienda online para desarroyar los conocimientos en JavaScript.',
+  description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Una tienda online para desarrollar los conocimientos en JavaScript.',
   image: '/proyectos/marifarma.png',
   image2: '/proyectos/carrito-marifarma.png',
   imagecuadrada: '/proyectos/cuadradas/1.png',
