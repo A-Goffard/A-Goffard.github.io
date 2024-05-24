@@ -9,9 +9,11 @@
       <img :src="project.image" alt="Project Image" class="project-image">
     </div>
 
-    <div class="cont-video" v-if="project.id === 1">
+    <div class="cont-video-general" v-if="project.id === 1">
       <h2>Video</h2>
+      <div class="cont-video">
       <iframe :src="project.video" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
 
     <div class="cont-contexto">
@@ -157,6 +159,7 @@ div {
 .cont-contexto,
 .cont-descripcionL,
 .cont-github,
+.cont-video-general,
 a,
 .cont-resumen {
   background-color: var(--blanco);
@@ -210,17 +213,23 @@ img {
   box-shadow: 0rem 0rem 1rem 0.3rem var(--lilabotonhover);
   border: solid 0.15rem var(--moradomuyoscuro);
 }
-
+.cont-video-general {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  height: 100%;
+}
 .cont-video {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; /* Proporción 16:9 (9 / 16 * 100) */
-  overflow: hidden;
 }
 
-.cont-video iframe {
+iframe {
   position: absolute;
-  top: 5rem;
+  top: 0; /* Ajusta la posición del video para que comience después del texto */
   left: 0;
   width: 100%;
   height: 100%;
