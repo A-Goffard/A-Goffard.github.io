@@ -7,6 +7,7 @@
       <Yo @click="toggleResumen" class="yo yomaxi"/>
       <SobreMiResumen class="resumen oculto"/>
     </div>
+    <Curriculum/>
     <Stack/>
     <Skills/>
     <Metodologias/>
@@ -50,6 +51,7 @@
 <script setup>
 import Yo from '../components/sobremi/Yo.vue'
 import YoMini from '../components/sobremi/YoMini.vue'
+
 import Stack from '../components/sobremi/Stack.vue'
 import Skills from '../components/sobremi/Skills.vue'
 import Metodologias from '../components/sobremi/Metodologias.vue'
@@ -57,7 +59,9 @@ import SobreMiResumen from '../components/sobremi/SobreMiResumen.vue'
 import FormacionCard from '../components/formariencia/FormacionCard.vue';
 import ExperienciaCard from '../components/formariencia/ExperienciaCard.vue';
 
+
 import { ref } from 'vue';
+import Curriculum from './Curriculum.vue'
 
 const toggleResumen = () => {
   const contenedorResumen = document.querySelector('.resumen');
@@ -82,7 +86,7 @@ const toggleFormacion = () => {
   botonPositivo.classList.toggle('oculto');
 };
 
-  const formaciones= ref([
+const formaciones = ref([
     {
         id: 1,
         title: 'Licienciada en Geología',
@@ -95,72 +99,107 @@ const toggleFormacion = () => {
     },
     {
         id: 3,
+        title: 'Docente en formación para el empleo',
+        description: 'Certificado de profesionalidad de Docencia de la Formación para el Empleo - SSCE0110',
+    },
+    {
+        id: 4,
+        title: 'Confección y publicación de páginas web',
+        description: 'Certificado de profesionalidad IFCD0110 en Confección y Publicación de Páginas Web',
+    },
+    {
+        id: 5,
+        title: 'Diseño web con HTML5 y CSS3',
+        description: 'Curso IFCD0036OH sobre diseño web con HTML5 y CSS3',
+    },
+    {
+        id: 6,
+        title: 'Responsive Web Design',
+        description: 'Curso IFCD0059OH de diseño web adaptable para múltiples dispositivos',
+    },
+    {
+        id: 7,
+        title: 'Programación en Python',
+        description: 'Curso de Programación en Python - IFCD32',
+    },
+    {
+        id: 8,
+        title: 'Metodologías Ágiles',
+        description: 'Curso IFCI0044OH sobre metodologías ágiles de desarrollo',
+    },
+    {
+        id: 9,
+        title: 'SQL',
+        description: 'Curso IFCI0066OH sobre lenguaje SQL y gestión de bases de datos',
+    },
+    {
+        id: 10,
         title: 'Máster en Educación y Sensibilización ambiental',
         description: 'Máster en Educación y Sensibilización ambiental',
     },
     {
-        id: 4,
+        id: 11,
         title: 'Directora y coordinadora de actividades de ocio y tiempo libre',
         description: 'Directora y coordinadora de actividades de ocio y tiempo libre',
     },
     {
-        id: 5,
+        id: 12,
         title: 'Máster superior en Arqueología',
         description: 'Máster superior en Arqueología',
     },
     {
-        id: 6,
+        id: 13,
         title: 'Formador de formadores',
         description: 'Formador de formadores',
     },
     {
-        id: 7,
+        id: 14,
         title: 'Docencia para la teleformación',
         description: 'Docencia para la teleformación',
     },
     {
-        id: 8,
+        id: 15,
         title: 'Monitora de ocio y tiempo libre',
         description: 'Monitora de ocio y tiempo libre',
     },
     {
-        id: 9,
+        id: 16,
         title: 'Monitora de Mindfulness',
         description: 'Monitora de Mindfulness',
     },
     {
-        id: 10,
+        id: 17,
         title: 'Máster en Psicología infantil y familiar',
         description: 'Máster en Psicología infantil y familiar',
     },
     {
-        id: 11,
+        id: 18,
         title: 'Máster en Psicología de la personalidad',
         description: 'Máster en Psicología de la personalidad',
     },
     {
-        id: 12,
+        id: 19,
         title: 'Postgrado en Psicología Holística',
         description: 'Postgrado en Psicología Holística',
     },
     {
-        id: 13,
+        id: 20,
         title: 'Arteterapia',
         description: 'Arteterapia',
     },
     {
-        id: 14,
+        id: 21,
         title: 'Pedagogía',
         description: 'Pedagogía',
     },
     {
-        id: 15,
+        id: 22,
         title: 'Musicoterapia',
         description: 'Musicoterapia',
-    },
+    }
+]);
 
-    // Agrega más proyectos según sea necesario
-  ]);
+
 
   const experiencias= ref([
     {
@@ -171,12 +210,18 @@ const toggleFormacion = () => {
     },
     {
         id: 2,
+        title: 'Docente en formación para el empleo',
+        date: '2019-2024',
+        description: 'Formadora docente en formaciones para el empleo de forma intermitente. Formaciones subvencionadas por Lanbide. Cursos de ecoturismo, huerto urbano, técnicas y recursos para el ocio y la educación en el tiempo libre',
+    },
+    {
+        id: 3,
         title: 'Personal investigador contratado UPV-EHU',
         date: '2017-2018',
         description: 'Trabajo principal como técnico en micropaleontología en el departamento de estratigrafía y paleontología de la Facultad de Ciencia y Tecnología. Análisis y caracterización de muestras marinas y estuarinas de foraminíferos bentónicos.',
     },
     {
-        id: 3,
+        id: 4,
         title: 'Otros trabajos',
         date: '< 2017',
         description: 'He trabajado en diferentes ámbitos a lo largo de los años: Hostelería, limpieza, clases particulares...',

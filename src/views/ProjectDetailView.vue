@@ -9,7 +9,7 @@
       <img :src="project.image" alt="Project Image" class="project-image">
     </div>
 
-    <div class="cont-video-general" v-if="project.id === 1">
+    <div class="cont-video-general" v-if="project.id === 2">
       <h2>Video</h2>
       <div class="cont-video">
       <iframe :src="project.video" frameborder="0" allowfullscreen></iframe>
@@ -17,13 +17,17 @@
     </div>
 
     <div class="cont-contexto">
-      <h2>Contexto</h2>
-      <p>{{ project.contextoDesarrollo }}</p>
       <img :src="project.image2" alt="Project Image" class="project-image">
     </div>
 
     <div class="cont-descripcionL">
+      <h2>Descripción</h2>
       <p>{{ project.comentariosP }}</p>
+    </div>
+
+    <div class="cont-descripcionL">
+      <h2>Mi desempeño</h2>
+      <p>{{ project.miDesempeno }}</p>
     </div>
 
     <div class="cont-github">
@@ -44,34 +48,48 @@
   const projects = ref([
   {
     id: 1,
+    title: 'Yincana Flysch Digital',
+    description: 'Es un proyecto desarrollado para el evento de SopelaKosta Fest de 2024. Una yincana digital pensada para familias en las que se unen, la parte digital con el entorno.',
+    comentariosP: 'Fue un proyecto que unía la programación con la educación medioambiental y una yincana en la playa de Arrietara-Atxabiribil.',
+    miDesempeno: 'Este proyecto lo he desarrollado yo íntegramente, desde la idea, el diseño, la programación, la parte material, el despliegue... Ha sido un proyecto pensado para que las familias participantes aprendan sobre la geología y el medioambiente de la zona donde se realizó al mimo tiempo que disfrutaban de una actividad en familia diferente y original. ',
+    contextoDesarrollo: 'Actividad y proyecto desarrollados para el evento de SopelaKosta Fest de 2024.',
+    image: '/proyectos/3.png',
+    video: '',
+    image2: '/proyectos/20.png',
+    imagecuadrada: '/proyectos/cuadradas/FD.png',
+    GitHub: 'https://github.com/A-Goffard/Soft-Spark',
+    // Otros detalles del proyecto
+  },
+  {
+    id: 2,
     title: 'BilboStack',
     description: 'Es un proyecto desarrollado para presentar una actividad desde el contexto del Bootcamp FullStack de Peñascal. Una Yincana dirigida a coders.',
-    comentariosP: 'Fue un proyecto en el que colaboró todo el Bootcamp. Mi desempeño fue grande y por ello es un proyecto al que le tengo especial cariño. Además, fué un proyecto que estaba enfocado a un evento real en el que participaron muchas personas que vinieron de diferentes puntos de España.Una experiencia realmente enriqucedora.',
+    comentariosP: 'Fue un proyecto en el que colaboró todo el Bootcamp. Mi desempeño fue grande y por ello es un proyecto al que le tengo especial cariño. Además, fué un proyecto que estaba enfocado a un evento real en el que participaron muchas personas que vinieron de diferentes puntos de España.Una experiencia realmente enriquecedora.',
     miDesempeno: 'Este proyecto tuvo una fase de prediseño que realicé yo misma. Una vez aprobado, fui la encargada de la coordinación y organización general del proyecto además de la parte principal del desarrollo del código. Coordiné y supervisé a los equipos de trabajo y fui la encargada de la comunicación y el enlace con la organización del evento de BilboStack.',
     contextoDesarrollo: 'Actividad y proyecto desarrollados para la previa de BilboStack 2024.',
     image: '/proyectos/BilboStack.jpeg',
     video: 'https://www.youtube.com/embed/YvbhfPTLMoA?si=0adscqYf5FIqA-rc',
     image2: '/proyectos/cuadradas/7.png',
     imagecuadrada: '/proyectos/cuadradas/7.png',
-    GitHub: 'https://github.com/A-Goffard/memory',
-    // Otros detalles del proyecto
-  },
-  {
-    id: 2,
-    title: 'Manga Power',
-    description: 'Es un proyecto desarrollado en un ámbito educativo para realizar un CRUD completo con una "base de datos" de tipo Json Server y la utilización de una API externa relacionada con el manga/anime.',
-    comentariosP: 'En este proyecto utilizamos el Json Server como base de datos para generar y guardar usuarios y estadísticas que despúes se usan en el código del proyecto. Además de las validaciones para el login, el registro de usuarios y la permanencia de datos, usamos la Pokeapi para generar un juego de cartas en una fase inicial. ',
-    miDesempeno: 'Fue un proyecto colaborativo en el que participamos varios estudiantes (5). Las partes del proyecto en las que trabajé más fueron la parte de diseño, la creación del Json Server y la comunicación con el FrontEnd, la estructura, el login, el registro y la lógica del juego.',
-    contextoDesarrollo: 'Proyecto desarrollado en contexto educativo (Bootcamp).',
-    image: '/proyectos/select.png',
-    video: '',
-    image2: '/proyectos/pokedex.png',
-    imagecuadrada: '/proyectos/cuadradas/9.png',
-    GitHub: 'https://github.com/A-Goffard/MangaPower',
+    GitHub: 'https://github.com/A-Goffard/yincana-bilbostack-2024',
     // Otros detalles del proyecto
   },
   {
     id: 3,
+    title: 'Soft Skills',
+    description: 'Es un proyecto desarrollado como proyecto final en el Bootcamp en el que participamos varias personas. Es una página web para el proyecto europeo "Soft Skills" cofinanciado por el programa Erasmus +, que 9 socios europeos de Francia, Bélgica, España, Austria y Eslovenia han colaborado y desarrollado los materiales sobre soft skills.',
+    comentariosP: 'Fue un proyecto real que pronto será publicado.',
+    miDesempeno: 'En este proyecto fuí la encargada de la supervisión, la parte de arquitectura de la web, y toda la parte relativa al multilenguaje y descargas. Además, fuí la que realizó todas las correcciones finales y la entrega al cliente.',
+    contextoDesarrollo: 'Actividad y proyecto desarrollados en el Bootcamp de Peñascal F5.',
+    image: '/proyectos/introSoft.png',
+    video: '',
+    image2: '/proyectos/soft2.png',
+    imagecuadrada: '/proyectos/cuadradas/soft-skills.png',
+    GitHub: 'https://github.com/A-Goffard/Soft-Spark',
+    // Otros detalles del proyecto
+  },
+  {
+    id: 4,
     title: 'HackathonF5 2024',
     description: 'Este es el proyecto de EcoPop que desarrollamos para el Hackathon de F5 en 2024 enfocado a estudiantes (proyecto finalista). Un marketplace en 48 horas.',
     comentariosP: 'Fue el primer Hackathon en el que participé y fue una experiencia intensa. Colaborar en la generación de un marketplace en 48 horas era todo un reto. Y quedar finalistas fue una experiencia genial.',
@@ -84,34 +102,7 @@
     GitHub: 'https://github.com/A-Goffard/ecoPop',
     // Otros detalles del proyecto
   },
-  {
-    id: 4,
-    title: 'Empezando con Vue 3',
-    description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Se trataba de montar un proyecto simple con Vue 3 Composition API.',
-    comentariosP: 'Este fué el primer acercamiento a Vue 3 dentro de los proyectos que desarrollé durante el bootcamp. Un juego de memory con pokemons, el tres en raya y una lista que tareas.',
-    miDesempeno: 'Fue un proyecto colaborativo en el que participamos varios estudiantes (3). Desarrollé la mayor parte del proyecto.',
-    contextoDesarrollo: 'Proyecto desarrollado en contexto educativo (Bootcamp).',
-    image: '/proyectos/memory.png',
-    video: '',
-    image2: '/proyectos/contacto.png',
-    imagecuadrada: '/proyectos/cuadradas/6.png',
-    GitHub: 'https://github.com/A-Goffard/memory',
-    // Otros detalles del proyecto
-  },
-  {
-    id: 5,
-    title: 'Marifarma',
-    description: 'Es un proyecto desarrollado dentro de un ámbito educativo. Una tienda online para desarrollar los conocimientos en JavaScript.',
-    comentariosP: 'En este proyecto creamos una parte de una tienda online de marihuana medicinal. Fué complejo para el nivel que teníamos en ese momento. Todo hecho con HTML, CSS y JavaScript.',
-    miDesempeno: 'Fue un proyecto colaborativo en el que participamos varios estudiantes (5). Las partes del proyecto en las que trabajé más fueron la parte de diseño, la página de productos, los filtros de productos y el carrito de la compra.',
-    contextoDesarrollo: 'Proyecto desarrollado en contexto educativo (Bootcamp)',
-    image: '/proyectos/marifarma.png',
-    video: '',
-    image2: '/proyectos/carrito-marifarma.png',
-    imagecuadrada: '/proyectos/cuadradas/1.png',
-    GitHub: 'https://github.com/A-Goffard/memory',
-    // Otros detalles del proyecto
-  },
+
   // Agrega más proyectos según sea necesario
 ]);
 
@@ -143,6 +134,7 @@ div {
 }
 .cont-general{
   width: 85%;
+  max-width: 75rem;
   margin: 1rem;
   border-radius: 0.5rem;
   border: solid 0.15rem var(--moradooscuro);
@@ -178,6 +170,9 @@ h1 {
 p {
   background-color: var(--blanco);
 }
+.cont-contexto{
+  margin: 1rem;
+}
 button {
     padding: 0.7rem 1.2rem;
     margin: 0.5rem;
@@ -200,7 +195,9 @@ button:hover {
 
 img {
   width: 100%;
+  max-width: 45rem;
 }
+
 .icon {
   width: 4.5rem;
   border-radius: 0.9rem;
@@ -214,6 +211,7 @@ img {
   border: solid 0.15rem var(--moradomuyoscuro);
 }
 .cont-video-general {
+  max-width: 45rem;
   display: flex;
   flex-direction: column;
   justify-content: center; 

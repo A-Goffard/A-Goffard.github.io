@@ -14,6 +14,10 @@
                 <button class="btn-SQL"><img class="iconos img-SQL" src="/skills/sql.png" alt="">SQL</button>
                 <button class="btn-SQLite"><img class="iconos img-SQLite" src="/skills/sqlite.png" alt="">SQLite</button>
                 <button class="btn-python"><img class="iconos img-python" src="/skills/python.png" alt="">Python</button>
+                <!-- Nuevos botones -->
+                <button class="btn-angular"><img class="iconos img-angular" src="/skills/angular.png" alt="">Angular</button>
+                <button class="btn-php"><img class="iconos img-php" src="/skills/php.png" alt="">PHP</button>
+                <button class="btn-csharp"><img class="iconos img-csharp" src="/skills/csharp.png" alt="">C#</button>
             </div>
         </div>
     </div>
@@ -55,7 +59,6 @@ button {
 }
 .img-html {
     background-color: rgb(79, 176, 232);
-    color: rgb(55, 28, 230);
 }
 .btn-html:hover {
     box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(79, 176, 232);
@@ -162,5 +165,40 @@ button {
 }
 .btn-python:hover {
     box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(32, 53, 244);
+}
+
+/* Nuevos estilos */
+
+.btn-angular {
+    background-color: rgb(255, 87, 34);
+    color: white;
+}
+.img-angular {
+    background-color: rgb(255, 87, 34);
+}
+.btn-angular:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(255, 87, 34);
+}
+
+.btn-php {
+    background-color: rgb(79, 93, 149);
+    color: white;
+}
+.img-php {
+    background-color: rgb(79, 93, 149);
+}
+.btn-php:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(79, 93, 149);
+}
+
+.btn-csharp {
+    background-color: rgb(80, 80, 160);
+    color: white;
+}
+.img-csharp {
+    background-color: rgb(80, 80, 160);
+}
+.btn-csharp:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(80, 80, 160);
 }
 </style>

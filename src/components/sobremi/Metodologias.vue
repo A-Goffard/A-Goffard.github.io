@@ -6,7 +6,7 @@
                 <button class="btn-scrum">Scrum</button>
                 <button class="btn-agile">Agile</button>
                 <button class="btn-desingThinking">Desing thinking</button>
-                <button class="btn-cientifico">Científico</button>
+                <button class="btn-cientifico">Científica</button>
             </div>
         </div>
     </div>
