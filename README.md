@@ -4,8 +4,7 @@ Este es mi **portfolio personal** desarrollado mientras cursaba un bootcamp de p
 
 ## 📸 Captura de Pantalla
 
-*Incluir una captura de pantalla del portfolio aquí.*
-![Descripción de la imagen](./assets/portfolio-screenshot.png)
+![Descripción de la imagen](./src/assets/portfolio.png)
 
 
 ## 🌐 Demo en Vivo
