@@ -19,8 +19,18 @@ import ProjectCard from '../components/ProjectCard.vue';
 
 import { ref } from 'vue';
 const projects = ref([
-  {
+{
     id: 1,
+    title: 'Soft Skills',
+    description: 'Es un proyecto que comenzó como proyecto final en el Bootcamp en el que participamos varias personas y finalizó siendo un proyecto real publicado. Es una página web para el proyecto europeo "Soft Skills" cofinanciado por el programa Erasmus +, que 9 socios europeos de Francia, Bélgica, España, Austria y Eslovenia han colaborado y desarrollado materiales sobre soft skills.',
+    image: '/proyectos/introSoft.png',
+    image2: '/proyectos/soft2.png',
+    imagecuadrada: '/proyectos/cuadradas/soft-skills.png',
+    GitHub: 'https://github.com/A-Goffard/Soft-Spark',
+    // Otros detalles del proyecto
+  },
+  {
+    id: 2,
     title: 'Yincana Flysch Digital',
     description: 'Es un proyecto desarrollado para el evento de SopelaKosta Fest de 2024. Una yincana digital pensada para familias en las que se unen, la parte digital con el entorno.',
     image: '/proyectos/3.png',
@@ -30,7 +40,7 @@ const projects = ref([
     // Otros detalles del proyecto
   },
   {
-    id: 2,
+    id: 3,
     title: 'BilboStack',
     description: 'Es un proyecto desarrollado para presentar una actividad desde el contexto del Bootcamp FullStack de Peñascal. Una Yincana dirigida a coders.',
     image: '/proyectos/BilboStack.jpeg',
@@ -39,16 +49,7 @@ const projects = ref([
     GitHub: 'https://github.com/A-Goffard/yincana-bilbostack-2024',
     // Otros detalles del proyecto
   },
-  {
-    id: 3,
-    title: 'Soft Skills',
-    description: 'Es un proyecto desarrollado como proyecto final en el Bootcamp en el que participamos varias personas. Es una página web para el proyecto europeo "Soft Skills" cofinanciado por el programa Erasmus +, que 9 socios europeos de Francia, Bélgica, España, Austria y Eslovenia han colaborado y desarrollado los materiales sobre soft skills.',
-    image: '/proyectos/introSoft.png',
-    image2: '/proyectos/soft2.png',
-    imagecuadrada: '/proyectos/cuadradas/soft-skills.png',
-    GitHub: 'https://github.com/A-Goffard/Soft-Spark',
-    // Otros detalles del proyecto
-  },
+
   {
     id: 4,
     title: 'HackathonF5 2024',
