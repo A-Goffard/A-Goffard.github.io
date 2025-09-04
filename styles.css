@@ -14,7 +14,8 @@
 
 }
 
-/* iconos que deben invertirse en tema oscuro */
+:root { --header-height: 4rem; }
+
 :root[data-theme="dark"] .invert {
     filter: invert(1) hue-rotate(180deg) saturate(90%);
 }
@@ -41,6 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: var(--header-height);
 }
 
 main {
@@ -84,11 +86,22 @@ h1 {
 
 .container {
     max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem
+    margin: 1rem auto; 
+    padding: 0 1rem;
 }
-
+.rrss-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;
+}
 .site-header {
+    background-color: var(--bg);
+      position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06)
 }
 
