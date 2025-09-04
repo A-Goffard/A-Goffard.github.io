@@ -30,6 +30,8 @@ Puedes abrir el archivo `index.html` directamente en tu navegador o desplegarlo 
 
 ## Licencia
 
+[![License: MIT](https://img.shields.io/badge/licencia-MIT-brightgreen)](https://opensource.org/licenses/MIT)
+
 El **código fuente** y los archivos relacionados con el desarrollo se distribuyen bajo la licencia [MIT](https://opensource.org/licenses/MIT):
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
