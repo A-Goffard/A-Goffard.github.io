@@ -12,9 +12,11 @@
     --muted: #9a9a9a;
     --accent: rgb(170, 238, 185);
 
-    .invert {
-        filter: invert(1) hue-rotate(180deg) saturate(90%);
-    }
+}
+
+/* iconos que deben invertirse en tema oscuro */
+:root[data-theme="dark"] .invert {
+    filter: invert(1) hue-rotate(180deg) saturate(90%);
 }
 
 * {
@@ -199,6 +201,13 @@ h1 {
 
 .invert {
     transition: filter .18s ease;
+}
+
+/* evitar que imágenes ensanchen la página en móviles */
+img, picture, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .compensacion {
